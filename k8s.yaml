@@ -4,5 +4,7 @@ metadata:
   name: microservicio
 spec:
   containers:
-    - name: hola-mundo
-      image: cxayala/hola-mundo:6
+    - name: nginx
+      image: hoverdev/hola-mundo:4
+      ports:
+        - containerPort: 3000
