@@ -1,0 +1,8 @@
+#este es solo para instalar, solo ejecutar 1 vez
+microk8s enable dashboard
+
+microk8s dashboard-proxy
+ 
+ssh -N -L 10443:127.0.0.1:10443 UsuarioAdmin@172.176.242.37
+ 
+https://localhost:10443/
