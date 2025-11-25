@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hola-mundo
-        image: cxayala/hola-mundo:6
+        image: cxayala/hola-mundo:7
         ports:
         - containerPort: 3000
