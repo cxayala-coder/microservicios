@@ -1,0 +1,2 @@
+#se debe ingresar al pod en kubernetes web y desde el shell
+printenv
