@@ -23,6 +23,13 @@ spec:
         envFrom:
             - configMapRef:
                 name: microserviciocxas
+          volumeMounts:
+            - name: config
+              mountPath: /app/config
+      volumes:
+        - name: config
+          configMap:
+            name: microserviciocxas-config
 ---
 apiVersion: v1
 kind: Service
@@ -43,3 +50,13 @@ metadata:
   name: microserviciocxas
 data:
   LOG_LEVEL: debug
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: microserviciocxas-config
+data:
+  app.conf: |
+    server {
+      port 1000
+    }
