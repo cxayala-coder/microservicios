@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: microserviciocxas
+  namespace: cesar
   labels:
     app: microserviciocxas
     depto: pagos
