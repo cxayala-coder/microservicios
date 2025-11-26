@@ -23,7 +23,7 @@ spec:
         envFrom:
             - configMapRef:
                 name: microserviciocxas
-          volumeMounts:
+        volumeMounts:
             - name: config
               mountPath: /app/config
       volumes:
