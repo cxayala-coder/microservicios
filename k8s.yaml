@@ -93,7 +93,7 @@ spec:
     resource:
       name: cpu
       target:
-        type: Utilization
+        type: Utilization ##en base a porcentaje de uso
         averageUtilization: 60
   - type: Resource
     resource:
