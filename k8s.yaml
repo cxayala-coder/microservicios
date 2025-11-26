@@ -33,3 +33,10 @@ spec:
       port: 3000
       targetPort: 3000
 
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: microserviciocxas
+data:
+  LOG_LEVEL: debug

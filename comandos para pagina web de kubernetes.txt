@@ -3,6 +3,6 @@ microk8s enable dashboard
 
 microk8s dashboard-proxy
  
-ssh -N -L 10443:127.0.0.1:10443 UsuarioAdmin@172.176.242.37
+ssh -N -L 10443:127.0.0.1:10443 UsuarioAC@52.167.57.41
  
 https://localhost:10443/

@@ -1,0 +1,7 @@
+microk8s kubectl get services
+microk8s kubectl port-forward svc/microserviciocxas-svc 3000:3000
+
+
+
+#en otra terminal:
+wget localhost:3000
